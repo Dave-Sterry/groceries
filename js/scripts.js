@@ -12,8 +12,8 @@ $(document).ready(function() {
     let uppercaseList =[];
     list.forEach(function(element) {
       uppercaseList.push(element.toUpperCase());
+      $("#results").html("<li>" + uppercaseList[0] + "</li>" + "<li>" + uppercaseList[1] + "</li>" + "<li>" + uppercaseList[2] + "</li>" + "<li>" + uppercaseList[3] + "</li>" + "<li>" + uppercaseList[4] + "</li>" + "<li>" + uppercaseList[5] + "</li>");
     });
-    console.log(uppercaseList);
     event.preventDefault();
   });
 });
